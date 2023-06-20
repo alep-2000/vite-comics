@@ -6,7 +6,9 @@ export default {
 
 <template lang="">
     <div>
-        Main
+        <div>
+        --&lt Content goes here &lt--
+        </div>
     </div>
 </template>
 
