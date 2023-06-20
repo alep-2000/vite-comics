@@ -6,12 +6,31 @@ export default {
 
 <template lang="">
     <div>
-        <div>
-        --&lt Content goes here &lt--
+        <div class="background">
+            <div class="sub-container">
+                <div class="content">
+                    --&lt Content goes here &lt--
+                </div>
+            </div>
         </div>
     </div>
 </template>
 
-<style lang="">
-    
+<style lang="scss">
+@use '../styles/partials/variables' as *;
+
+.background {
+    background-color: black;
+
+    .sub-container {
+        width: 60%;
+        margin: 0 auto;
+
+        .content {
+            color: white;
+            font-size: 18px;
+            padding: 30px 0;
+        }
+    }
+}
 </style>

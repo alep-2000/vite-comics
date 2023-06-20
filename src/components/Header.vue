@@ -35,16 +35,17 @@ export default {
 
 header {
     width: 100%;
-    height: 100px;
-    background-color: red;
+    background-color: white;
 
     .flex {
         display: flex;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        width: 60%;
+        margin: 0 auto;
 
         img {
             width: 60px;
-            margin: 20px 0;
+            margin: 10px 0;
         }
 
         ul {
@@ -53,7 +54,7 @@ header {
                 display: inline-block;
                 margin: 5px;
                 font-size: 10px;
-                margin: 40px 5px;
+                margin: 30px 5px;
 
                 a {
                     text-decoration: $text_decoration;
@@ -62,7 +63,7 @@ header {
                     &:hover {
                         color: #0C7CEC;
                         border-bottom: 3px solid #0C7CEC;
-                        padding-bottom: 46px;
+                        padding-bottom: 40px;
                     }
                 }
             }
