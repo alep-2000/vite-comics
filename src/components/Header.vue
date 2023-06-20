@@ -61,8 +61,8 @@ header {
                     color: black;
 
                     &:hover {
-                        color: #0C7CEC;
-                        border-bottom: 3px solid #0C7CEC;
+                        color: $blue;
+                        border-bottom: 3px solid $blue;
                         padding-bottom: 40px;
                     }
                 }

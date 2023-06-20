@@ -6,39 +6,41 @@ export default {
 
 <template lang="">
     <div>
-        <div>
-            <ul>
-                <li>
-                    <div>
-                        <img src="../img/buy-comics-digital-comics.png" alt="Digital-Comics">
-                        <span>DIGITAL COMICS</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="../img/buy-comics-merchandise.png" alt="Dc-Merchandise">
-                        <span>DC MERCHANDISE</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="../img/buy-comics-subscriptions.png" alt="Subscription">
-                        <span>SUBSCRIPTION</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="../img/buy-comics-shop-locator.png" alt="Shop-Locator">
-                        <span>COMIC SHOP LOCATOR</span>
-                    </div>
-                </li>
-                <li>
-                    <div>
-                        <img src="../img/buy-dc-power-visa.svg" alt="Power-Visa">
-                        <span>DC POWER VISA</span>
-                    </div>
-                </li>
-            </ul>
+        <div class="container">
+            <div class="sub-container">
+                <ul>
+                    <li>
+                        <div>
+                            <img src="../img/buy-comics-digital-comics.png" alt="Digital-Comics">
+                            <span>DIGITAL COMICS</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../img/buy-comics-merchandise.png" alt="Dc-Merchandise">
+                            <span>DC MERCHANDISE</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../img/buy-comics-subscriptions.png" alt="Subscription">
+                            <span>SUBSCRIPTION</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img id="locator" src="../img/buy-comics-shop-locator.png" alt="Shop-Locator">
+                            <span>COMIC SHOP LOCATOR</span>
+                        </div>
+                    </li>
+                    <li>
+                        <div>
+                            <img src="../img/buy-dc-power-visa.svg" alt="Power-Visa">
+                            <span>DC POWER VISA</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </div>
         <section>
             <div>
@@ -103,6 +105,41 @@ export default {
     </div>
 </template>
 
-<style lang="">
-    
+<style lang="scss">
+@use '../styles/partials/variables' as *;
+
+.container {
+    background-color: #027DEF;
+
+    .sub-container {
+        width: 60%;
+        height: 100px;
+        margin: 0 auto;
+
+        li {
+            display: inline-block;
+            margin-right: 5px;
+            margin-top: 20px;
+
+            div {
+                margin-right: 2.5rem;
+
+                img {
+                    width: 35px;
+                    margin: 8px;
+                    vertical-align: middle;
+                }
+
+                #locator {
+                    width: 25px;
+                }
+
+                span {
+                    font-size: 10px;
+                    color: white;
+                }
+            }
+        }
+    }
+}
 </style>
