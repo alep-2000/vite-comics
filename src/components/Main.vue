@@ -29,7 +29,7 @@ export default {
         .content {
             color: white;
             font-size: 18px;
-            padding: 30px 0;
+            padding: 40px 0;
         }
     }
 }

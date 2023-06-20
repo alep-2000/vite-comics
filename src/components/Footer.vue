@@ -88,21 +88,19 @@ export default {
                 </div>
             </div>
         </section>
-        <section>
-            <div>
-                <button>SIGN-UP NOW!</button>
-            </div>
-            <div>
-                <span>
-                    FOLLOW US
-                </span>
-                <span>
-                    <img src="../img/footer-facebook.png" alt="Facebook">
-                    <img src="../img/footer-twitter.png" alt="Twitter">
-                    <img src="../img/footer-youtube.png" alt="Youtube">
-                    <img src="../img/footer-pinterest.png" alt="Pinterest">
-                    <img src="../img/footer-periscope.png" alt="Periscope">
-                </span>
+        <section class="back">
+            <div class="options-list">
+                <div class="flex">
+                    <button>SIGN-UP NOW!</button>
+                    <span>
+                        FOLLOW US
+                        <img src="../img/footer-facebook.png" alt="Facebook">
+                        <img src="../img/footer-twitter.png" alt="Twitter">
+                        <img src="../img/footer-youtube.png" alt="Youtube">
+                        <img src="../img/footer-pinterest.png" alt="Pinterest">
+                        <img src="../img/footer-periscope.png" alt="Periscope">
+                    </span>
+                </div>
             </div>
         </section>
     </div>
@@ -114,15 +112,14 @@ export default {
 .container {
     background-color: #027DEF;
 
+
     .sub-container {
         width: 60%;
-        height: 100px;
         margin: 0 auto;
 
         li {
             display: inline-block;
-            margin-right: 5px;
-            margin-top: 20px;
+            margin: 30px 5px 30px 0;
 
             div {
                 margin-right: 2.5rem;
@@ -149,7 +146,6 @@ export default {
 
 .background {
     width: 100%;
-    height: 300px;
     background-image: url('../img/footer-bg.jpg');
 
     .options-list {
@@ -160,7 +156,7 @@ export default {
             display: flex;
 
             ul {
-                margin-right: 15px;
+                margin: 25px 15px 35px 0;
                 padding: 15px 0 5px;
                 list-style-type: $list_s_type;
 
@@ -177,15 +173,50 @@ export default {
             }
 
             img {
-                margin: -30px 0 0 200px;
-                width: 400px;
+                right: 15%;
+                top: 60%;
+                transform: translate(-15%, -60%);
+                width: 380px;
+                position: absolute;
+                z-index: 1;
             }
         }
-
-
-
-
     }
+}
 
+.back {
+    width: 100%;
+    background-color: #303030;
+    position: relative;
+    z-index: 3;
+
+    .options-list {
+        width: 60%;
+        margin: 0 auto;
+
+        .flex {
+            display: flex;
+            justify-content: space-between;
+
+            button {
+                background-color: transparent;
+                border: 1px solid #027DEF;
+                padding: 8px;
+                color: white;
+                margin: 28px 0;
+            }
+
+            span {
+                color: #027DEF;
+                margin: 33px 0;
+            }
+
+            img {
+                vertical-align: middle;
+                width: 22px;
+                margin: 0 5px;
+            }
+        }
+    }
 }
 </style>
