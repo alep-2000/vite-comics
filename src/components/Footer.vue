@@ -174,9 +174,9 @@ export default {
 
             img {
                 right: 15%;
-                top: 60%;
-                transform: translate(-15%, -60%);
-                width: 380px;
+                top: 85%;
+                transform: translate(-15%, -85%);
+                width: 400px;
                 position: absolute;
                 z-index: 1;
             }
