@@ -42,47 +42,50 @@ export default {
                 </ul>
             </div>
         </div>
-        <section>
-            <div>
-                <ul>
-                    <li><strong>DC COMICS</strong></li>
-                    <li>Characters</li>
-                    <li>Comics</li>
-                    <li>Movies</li>
-                    <li>TV</li>
-                    <li>Games</li>
-                    <li>Videos</li>
-                    <li>News</li>
-                </ul>
-                <ul>
-                    <li><strong>SHOP</strong></li>
-                    <li>Shop DC</li>
-                    <li>Shop DC Collectibles</li>
-                </ul>
-            </div>
-            <div>
-                <ul>
-                    <li><strong>DC</strong></li>
-                    <li>Terms of Use</li>
-                    <li>Privacy Policy(New)</li>
-                    <li>Ad Choices</li>
-                    <li>Advertising</li>
-                    <li>Jobs</li>
-                    <li>Subscriptions</li>
-                    <li>Talent Workshops</li>
-                    <li>CPSC Certificates</li>
-                    <li>Ratings</li>
-                    <li>Shop Help</li>
-                    <li>Contact Us</li>
-                </ul>
-            </div>
-            <div>
-                <li><strong>SITES</strong></li>
-                <li>DC</li>
-                <li>MAD Magazine</li>
-                <li>DC Kids</li>
-                <li>DC Universe</li>
-                <li>DC Power Visa</li>
+        <section class="background">
+            <div class="options-list">
+                <div class="flex">
+                    <div>
+                        <ul>
+                            <li><strong>DC COMICS</strong></li>
+                            <li>Characters</li>
+                            <li>Comics</li>
+                            <li>Movies</li>
+                            <li>TV</li>
+                            <li>Games</li>
+                            <li>Videos</li>
+                            <li>News</li>
+                        </ul>
+                        <ul>
+                            <li><strong>SHOP</strong></li>
+                            <li>Shop DC</li>
+                            <li>Shop DC Collectibles</li>
+                        </ul>
+                    </div>
+                    <ul>
+                        <li><strong>DC</strong></li>
+                        <li>Terms of Use</li>
+                        <li>Privacy Policy(New)</li>
+                        <li>Ad Choices</li>
+                        <li>Advertising</li>
+                        <li>Jobs</li>
+                        <li>Subscriptions</li>
+                        <li>Talent Workshops</li>
+                        <li>CPSC Certificates</li>
+                        <li>Ratings</li>
+                        <li>Shop Help</li>
+                        <li>Contact Us</li>
+                    </ul>
+                    <ul>
+                        <li><strong>SITES</strong></li>
+                        <li>DC</li>
+                        <li>MAD Magazine</li>
+                        <li>DC Kids</li>
+                        <li>DC Universe</li>
+                        <li>DC Power Visa</li>
+                    </ul>
+                    <img src="../../public/dc-logo-bg.png" alt="Logo-BG">
+                </div>
             </div>
         </section>
         <section>
@@ -105,7 +108,7 @@ export default {
     </div>
 </template>
 
-<style lang="scss">
+<style lang="scss" scoped>
 @use '../styles/partials/variables' as *;
 
 .container {
@@ -141,5 +144,48 @@ export default {
             }
         }
     }
+
+}
+
+.background {
+    width: 100%;
+    height: 300px;
+    background-image: url('../img/footer-bg.jpg');
+
+    .options-list {
+        width: 60%;
+        margin: 0 auto;
+
+        .flex {
+            display: flex;
+
+            ul {
+                margin-right: 15px;
+                padding: 15px 0 5px;
+                list-style-type: $list_s_type;
+
+                li {
+                    padding-top: 5px;
+                    font-size: 10px;
+                    color: rgb(166, 163, 163);
+
+                    strong {
+                        font-size: 16px;
+                        color: white;
+                    }
+                }
+            }
+
+            img {
+                margin: -30px 0 0 200px;
+                width: 400px;
+            }
+        }
+
+
+
+
+    }
+
 }
 </style>
