@@ -1,6 +1,16 @@
 <script>
-export default {
+import ComicsBooks from '../data/ComicsBooks.js'
+import CardVue from './card.vue'
 
+export default {
+    components: {
+        CardVue
+    },
+    data() {
+        return {
+            comicsBooks: ComicsBooks
+        }
+    }
 }
 </script>
 
@@ -8,8 +18,9 @@ export default {
     <div>
         <div class="background">
             <div class="sub-container">
-                <div class="content">
-                    --&lt Content goes here &lt--
+                <div class="flex">
+                    <CardVue v-for="(comicBook, index) in comicsBooks" :key="index"  :img="comicBook.thumb" :series="comicBook.series"/>
+                        
                 </div>
             </div>
         </div>
@@ -26,10 +37,15 @@ export default {
         width: 60%;
         margin: 0 auto;
 
-        .content {
-            color: white;
-            font-size: 18px;
-            padding: 40px 0;
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+
+            .card {
+                width: calc(100% / 6);
+                height: 300px;
+                color: white;
+            }
         }
     }
 }
