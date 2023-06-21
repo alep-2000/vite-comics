@@ -113,6 +113,7 @@ export default {
     background-color: #027DEF;
 
 
+
     .sub-container {
         width: 60%;
         margin: 0 auto;
@@ -151,6 +152,7 @@ export default {
     .options-list {
         width: 60%;
         margin: 0 auto;
+        position: relative;
 
         .flex {
             display: flex;
@@ -173,12 +175,14 @@ export default {
             }
 
             img {
-                right: 15%;
-                top: 83%;
-                transform: translate(-15%, -83%);
-                width: 400px;
                 position: absolute;
                 z-index: 1;
+                right: 0%;
+                top: 40%;
+                transform: translate(-0%, -40%);
+                width: 450px;
+                object-fit: fill;
+
             }
         }
     }
@@ -204,12 +208,12 @@ export default {
                 border: 1px solid #027DEF;
                 padding: 8px;
                 color: white;
-                margin: 28px 0;
+                margin: 32px 0;
             }
 
             span {
                 color: #027DEF;
-                margin: 33px 0;
+                margin: 38px 0;
             }
 
             img {
