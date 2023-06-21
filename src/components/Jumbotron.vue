@@ -7,7 +7,7 @@ export default {
 <template lang="">
     <div class="jumbotron">
         <div>
-            CURRENT SERIES
+            <strong>CURRENT SERIES</strong>
         </div>
     </div>
 </template>
@@ -19,6 +19,7 @@ export default {
     width: 100%;
     height: 300px;
     background-image: url('../assets/img/jumbotron.jpg');
+    background-size: cover;
     position: relative;
 
     div {

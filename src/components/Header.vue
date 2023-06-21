@@ -72,7 +72,7 @@ header {
 
         img {
             width: 60px;
-            margin: 20px 0;
+            margin: 10px 0;
         }
 
         ul {
@@ -81,7 +81,7 @@ header {
                 display: inline-block;
                 margin: 5px;
                 font-size: 10px;
-                margin: 40px 5px;
+                margin: 35px 5px;
 
                 a {
                     text-decoration: $text_decoration;
@@ -90,7 +90,7 @@ header {
                     &:hover {
                         color: $blue;
                         border-bottom: 3px solid $blue;
-                        padding-bottom: 50px;
+                        padding-bottom: 35px;
                     }
                 }
             }

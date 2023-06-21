@@ -16,9 +16,9 @@ export default {
 
 <style lang="scss" scoped>
 img {
-    width: 140px;
-    height: 140px;
-    margin: 30px 10px 0 0;
+    width: 130px;
+    height: 130px;
+    margin: 30px 5px 0 0;
 }
 
 h3 {

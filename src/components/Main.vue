@@ -20,7 +20,9 @@ export default {
             <div class="sub-container">
                 <div class="flex">
                     <CardVue v-for="(comicBook, index) in comicsBooks" :key="index"  :img="comicBook.thumb" :series="comicBook.series"/>
-                        
+                </div>
+                <div class="justify">
+                    <button class="button"><strong>LOAD MORE</strong></button>
                 </div>
             </div>
         </div>
@@ -44,6 +46,21 @@ export default {
             .card {
                 width: calc(100% / 6);
                 color: white;
+            }
+
+
+        }
+
+        .justify {
+            display: flex;
+            justify-content: center;
+
+            .button {
+                border: none;
+                padding: 10px 45px;
+                margin: 30px 0 15px;
+                color: white;
+                background-color: $blue;
             }
         }
     }
