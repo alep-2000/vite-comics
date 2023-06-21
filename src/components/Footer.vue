@@ -11,31 +11,31 @@ export default {
                 <ul>
                     <li>
                         <div>
-                            <img src="../img/buy-comics-digital-comics.png" alt="Digital-Comics">
+                            <img src="../assets/img/buy-comics-digital-comics.png" alt="Digital-Comics">
                             <span>DIGITAL COMICS</span>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="../img/buy-comics-merchandise.png" alt="Dc-Merchandise">
+                            <img src="../assets/img/buy-comics-merchandise.png" alt="Dc-Merchandise">
                             <span>DC MERCHANDISE</span>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="../img/buy-comics-subscriptions.png" alt="Subscription">
+                            <img src="../assets/img/buy-comics-subscriptions.png" alt="Subscription">
                             <span>SUBSCRIPTION</span>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img id="locator" src="../img/buy-comics-shop-locator.png" alt="Shop-Locator">
+                            <img id="locator" src="../assets/img/buy-comics-shop-locator.png" alt="Shop-Locator">
                             <span>COMIC SHOP LOCATOR</span>
                         </div>
                     </li>
                     <li>
                         <div>
-                            <img src="../img/buy-dc-power-visa.svg" alt="Power-Visa">
+                            <img src="../assets/img/buy-dc-power-visa.svg" alt="Power-Visa">
                             <span>DC POWER VISA</span>
                         </div>
                     </li>
@@ -94,11 +94,11 @@ export default {
                     <button>SIGN-UP NOW!</button>
                     <span>
                         FOLLOW US
-                        <img src="../img/footer-facebook.png" alt="Facebook">
-                        <img src="../img/footer-twitter.png" alt="Twitter">
-                        <img src="../img/footer-youtube.png" alt="Youtube">
-                        <img src="../img/footer-pinterest.png" alt="Pinterest">
-                        <img src="../img/footer-periscope.png" alt="Periscope">
+                        <img src="../assets/img/footer-facebook.png" alt="Facebook">
+                        <img src="../assets/img/footer-twitter.png" alt="Twitter">
+                        <img src="../assets/img/footer-youtube.png" alt="Youtube">
+                        <img src="../assets/img/footer-pinterest.png" alt="Pinterest">
+                        <img src="../assets/img/footer-periscope.png" alt="Periscope">
                     </span>
                 </div>
             </div>
@@ -146,7 +146,7 @@ export default {
 
 .background {
     width: 100%;
-    background-image: url('../img/footer-bg.jpg');
+    background-image: url('../assets/img/footer-bg.jpg');
 
     .options-list {
         width: 60%;
@@ -174,14 +174,15 @@ export default {
 
             img {
                 right: 15%;
-                top: 85%;
-                transform: translate(-15%, -85%);
+                top: 83%;
+                transform: translate(-15%, -83%);
                 width: 400px;
                 position: absolute;
                 z-index: 1;
             }
         }
     }
+
 }
 
 .back {
