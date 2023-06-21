@@ -1,5 +1,5 @@
 <script>
-import ComicsBooks from '../data/ComicsBooks.js'
+import ComicsBooks from '../data/comicsBooks.js'
 import CardVue from './card.vue'
 
 export default {
@@ -43,7 +43,6 @@ export default {
 
             .card {
                 width: calc(100% / 6);
-                height: 300px;
                 color: white;
             }
         }
